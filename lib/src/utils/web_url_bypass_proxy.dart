@@ -20,7 +20,7 @@ class BridgedBypassProxy implements BypassProxy {
 
   @override
   String buildProxyUrl(String pageUrl) {
-    return 'https://cors.bridged.cc/$pageUrl';
+    return '$pageUrl';
   }
 
   @override
@@ -35,7 +35,7 @@ class CodeTabsBypassProxy implements BypassProxy {
 
   @override
   String buildProxyUrl(String pageUrl) {
-    return 'https://api.codetabs.com/v1/proxy/?quest=$pageUrl';
+    return '$pageUrl';
   }
 
   @override
@@ -50,7 +50,7 @@ class WeCorsAnyWhereProxy implements BypassProxy {
 
   @override
   String buildProxyUrl(String pageUrl) {
-    return 'https://we-cors-anywhere.herokuapp.com/$pageUrl';
+    return '$pageUrl';
   }
 
   @override
